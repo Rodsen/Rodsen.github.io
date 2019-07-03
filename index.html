@@ -15,93 +15,149 @@
 <body>
   <!-- 头------------------------------start ----------------------------------->
   <header>
-    <div class="">
-      <nav class="navbar navbar-default navbar-inverse container-fluid">
-        <div class="container-fluid">
-          <!-- 导航条头部 -->
-          <div class="navbar-header">
-            <!-- 商标 -->
-            <a class="navbar-brand" id="rodsen" href="#">Rodsen</a>
-            <!-- 折叠菜单的按钮 -->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target="#n-navbar-collapse-1" aria-expanded="false">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <!-- 可折叠的导航菜单 -->
-          <div class="collapse navbar-collapse navbar-right" id="n-navbar-collapse-1">          
-            <!-- 标签页 -->
-            <ul class="nav nav-pills navbar-left navbar-btn">
-                <li role="presentation" class="active"><a href="#tab1" aria-controls="home" role="tab"
-                    data-toggle="pill">Home</a></li>
-                <li role="presentation"><a href="#tab2" aria-controls="home" role="tab" data-toggle="pill">Profile</a></li>
-                <li role="presentation"><a href="#tab3" aria-controls="home" role="tab" data-toggle="pill">Messages</a></li>
-              </ul>
-          </div>
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- 导航条头部 -->
+        <div class="navbar-header">
+          <!-- 商标 -->
+          <a class="navbar-brand" id="rodsen" href="#tab1" aria-controls="home" role="tab" data-toggle="pill">Rodsen</a>
+
+          <!-- 折叠菜单的按钮 -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#n-navbar-collapse-1" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-      </nav>
-    </div>
+        <!-- 可折叠的导航菜单 -->
+        <div class="collapse navbar-collapse navbar-right" id="n-navbar-collapse-1">
+          <!-- 标签页 -->
+          <ul class="nav nav-pills navbar-left navbar-btn">
+            <li role="presentation"><a href="#tab1" aria-controls="home" role="tab" data-toggle="pill">Home</a></li>
+            <li role="presentation"><a href="#tab2" aria-controls="photos" role="tab" data-toggle="pill">Photos</a>
+            </li>
+            <li role="presentation"><a href="#tab3" aria-controls="production" role="tab" data-toggle="pill">Production</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
 
   </header>
   <!-- 头 ---------------------------end------------------------- -->
   <!-- --------------主体-------------------start -->
-  <main class="container">
-    <h1 class="page-header">Photo Album <small> 图集</small></h1>
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a href="./assets/img/1.jpg" class="thumbnail ">
-          <img src="./assets/img/thumbnail/1.1.jpg" alt="...">
-        </a>
+  <main>
+    <!-- 标签容器 -->
+    <div class="tab-content">
+      <!-- 巨幕-----------------------start-------------------------- -->
+      <div role="tabpanel" class="tab-pane active" id="tab1">
+        <div class="jumbotron">
+          <div class="container">
+            <h1>Rodsen</h1>
+            <p>欢迎来到Rodsen的个人主页</p>
+            <span><a class="btn btn-primary btn-lg" href="#tab2" aria-controls="photos" role="tab"
+                data-toggle="pill">Photos</a></span>
+            <span><a class="btn btn-primary btn-lg" href="#tab3" aria-controls="production" role="tab"
+                data-toggle="pill">Production</a></span>
+          </div>
+        </div>
+        <div class="home-section"></div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a href="#" class="thumbnail ">
-          <img src="./assets/img/thumbnail/2.jpg" alt="...">
-        </a>
+      <!-- 巨幕--------------------------end-------------------------- -->
+      <!-- 图集---------------------------start----------------------->
+      <div role="tabpanel" class="tab-pane container" id="tab2">
+        <h1 class="page-header">Photo Album <small> 图集</small></h1>
+        <div class="row photos">
+          <div class=" col-sm-6 col-md-3">
+            <a href="./assets/img/1.jpg" class="thumbnail ">
+              <img src="./assets/img/thumbnail/1.1.jpg" alt="...">
+            </a>
+          </div>
+          <div class=" col-sm-6 col-md-3">
+            <a href="#" class="thumbnail ">
+              <img src="./assets/img/thumbnail/2.jpg" alt="...">
+            </a>
+          </div>
+          <div class=" col-sm-6 col-md-3">
+            <a href="#" class="thumbnail ">
+              <img src="./assets/img/thumbnail/3.jpg" alt="...">
+            </a>
+          </div>
+          <div class=" col-sm-6 col-md-3">
+            <a href="#" class="thumbnail ">
+              <img src="./assets/img/thumbnail/4.jpg" alt="...">
+            </a>
+          </div>
+          <div class=" col-sm-6 col-md-3">
+            <a href="#" class="thumbnail ">
+              <img src="./assets/img/thumbnail/5.jpg" alt="...">
+            </a>
+          </div>
+          <div class=" col-sm-6 col-md-3">
+            <a href="#" class="thumbnail ">
+              <img src="./assets/img/thumbnail/6.jpg" alt="...">
+            </a>
+          </div>
+          <div class=" col-sm-6 col-md-3">
+            <a href="#" class="thumbnail ">
+              <img src="./assets/img/thumbnail/7.jpg" alt="...">
+            </a>
+          </div>
+          <div class=" col-sm-6 col-md-3">
+            <a href="#" class="thumbnail ">
+              <img src="./assets/img/thumbnail/8.jpg" alt="...">
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a href="#" class="thumbnail ">
-          <img src="./assets/img/thumbnail/3.jpg" alt="...">
-        </a>
+      <!-- 图集---------------------------end----------------------->
+      <!-- 作品---------------------------start------------------- -->
+      <div role="tabpanel" class="tab-pane container" id="tab3">
+        <h1 class="page-header">Production <small> 开源</small></h1>
+        <div class="row production">
+          <div class="col-sm-6 col-md-4">
+            <a href="#" class="thumbnail production-bder">
+              <img src="./assets/img/animate.png" alt="...">
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <a href="#" class="thumbnail production-bder">
+              <img src="./assets/img/resume.png" alt="...">
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <a href="#" class="thumbnail production-bder">
+              <img src="./assets/img/snakegame.png" alt="...">
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <a href="#" class="thumbnail production-bder">
+              <img src="./assets/img/animate.png" alt="...">
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <a href="#" class="thumbnail production-bder">
+              <img src="./assets/img/animate.png" alt="...">
+            </a>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <a href="#" class="thumbnail production-bder">
+              <img src="./assets/img/animate.png" alt="...">
+            </a>
+          </div>
+
+        </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a href="#" class="thumbnail ">
-          <img src="./assets/img/thumbnail/4.jpg" alt="...">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a href="#" class="thumbnail ">
-          <img src="./assets/img/thumbnail/5.jpg" alt="...">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a href="#" class="thumbnail ">
-          <img src="./assets/img/thumbnail/6.jpg" alt="...">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a href="#" class="thumbnail ">
-          <img src="./assets/img/thumbnail/7.jpg" alt="...">
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-3">
-        <a href="#" class="thumbnail ">
-          <img src="./assets/img/thumbnail/8.jpg" alt="...">
-        </a>
-      </div>
-      ...
+      <!-- 作品---------------------------end------------------- -->
     </div>
   </main>
   <!-- --------------主体-------------------end---------------------->
-  <!-- 尾页 --------------------------start---------------------- -->
-  <footer>
-    <div>
-      <div class="center">Copyright © 2019 Rosen .Pictures from the Internet(侵删)</div>
-    </div>
-  </footer>
-
-  <!-- 尾页 --------------------------end---------------------- -->
+  <div class="copyright">
+    Copyright © 2019 Rosen | Pictures from the Internet
+  </div>
+  <script src="./assets/index.js"></script>
 </body>
 
 </html>
