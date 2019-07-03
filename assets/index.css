@@ -21,10 +21,10 @@ img {
 .production {
   background-color: #282C34;
   padding-top: 15px;
-  border: 3px solid #00CED3
+  box-shadow:0 0 3px 3px #0000FF
 }
 .production-bder {
-  border: 10px solid #00CED3
+  border: 10px solid gray
 }
 .footer-bg {
   background-color: #222222;
@@ -37,3 +37,4 @@ img {
 .jumbotron {
   margin-bottom: 0;
 }
+
